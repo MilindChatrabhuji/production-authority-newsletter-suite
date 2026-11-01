@@ -1,0 +1,14 @@
+{
+  "name": "@earning-machine/newsletter-authority-engine",
+  "version": "1.0.0",
+  "description": "Way #67: Authority Newsletter & Multi-Platform Sponsorship Engine",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "ts-node src/demo_runner.ts",
+    "build": "tsc"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}

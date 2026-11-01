@@ -1,0 +1,10 @@
+{
+  "name": "@earning-machine/way67-authority-newsletter-suite",
+  "version": "1.0.0",
+  "description": "Production Authority Newsletter & Multi-Platform Sponsorship Engine (Way #67 / Product 69)",
+  "private": true,
+  "workspaces": [
+    "engine/*",
+    "monetization_newsletter_kit"
+  ]
+}

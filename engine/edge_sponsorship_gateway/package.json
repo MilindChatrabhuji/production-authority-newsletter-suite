@@ -1,0 +1,13 @@
+{
+  "name": "@earning-machine/edge-newsletter-gateway",
+  "version": "1.0.0",
+  "description": "Way #67: Edge Newsletter Gateway & Telemetry Aggregator",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "ts-node src/demo_runner.ts",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}

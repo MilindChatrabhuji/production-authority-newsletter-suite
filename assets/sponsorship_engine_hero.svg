@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090D16" />
+      <stop offset="50%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#1E1B4B" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366F1" />
+      <stop offset="50%" stop-color="#8B5CF6" />
+      <stop offset="100%" stop-color="#EC4899" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.95" />
+    </linearGradient>
+    <linearGradient id="badgeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)" />
+
+  <!-- Grid Highlights -->
+  <g stroke="#334155" stroke-width="0.5" opacity="0.3">
+    <line x1="100" y1="0" x2="100" y2="630" />
+    <line x1="300" y1="0" x2="300" y2="630" />
+    <line x1="500" y1="0" x2="500" y2="630" />
+    <line x1="700" y1="0" x2="700" y2="630" />
+    <line x1="900" y1="0" x2="900" y2="630" />
+    <line x1="1100" y1="0" x2="1100" y2="630" />
+    <line x1="0" y1="100" x2="1200" y2="100" />
+    <line x1="0" y1="200" x2="1200" y2="200" />
+    <line x1="0" y1="300" x2="1200" y2="300" />
+    <line x1="0" y1="400" x2="1200" y2="400" />
+    <line x1="0" y1="500" x2="1200" y2="500" />
+  </g>
+
+  <!-- Title Pill -->
+  <rect x="80" y="60" width="380" height="36" rx="18" fill="#1E293B" stroke="#4F46E5" stroke-width="1.5" />
+  <circle cx="102" cy="78" r="6" fill="#10B981" />
+  <text x="118" y="83" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700" fill="#E2E8F0" letter-spacing="0.5">WAY #67 &#8226; CATEGORY D: MEDIA &amp; AUDIENCE</text>
+
+  <!-- Main Title -->
+  <text x="80" y="150" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="44" font-weight="900" fill="#FFFFFF" letter-spacing="-1">Authority Newsletter &amp;</text>
+  <text x="80" y="205" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="44" font-weight="900" fill="url(#accentGrad)" letter-spacing="-1">Multi-Platform Sponsorship Engine</text>
+
+  <!-- Subtitle -->
+  <text x="80" y="250" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="400" fill="#94A3B8">beehiiv &#8226; Substack &#8226; LinkedIn Newsletters &#8226; Automated Sponsor CPM ROI &#8226; Churn Guard</text>
+
+  <!-- Left Card: Curation & Rate Card -->
+  <rect x="80" y="290" width="480" height="270" rx="16" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.5" />
+  <rect x="105" y="315" width="130" height="26" rx="6" fill="#4338CA" />
+  <text x="115" y="333" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">CURATION ENGINE</text>
+
+  <text x="105" y="370" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="600" fill="#F1F5F9">&#8226; Multi-Source Industry Link Synthesizer</text>
+  <text x="105" y="400" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="600" fill="#F1F5F9">&#8226; Sponsor Click Tracking &amp; ROI Analytics</text>
+  <text x="105" y="430" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="600" fill="#F1F5F9">&#8226; Dynamic Media Kit &amp; Rate Card Generator</text>
+  <text x="105" y="460" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="600" fill="#F1F5F9">&#8226; Subscriber Engagement Churn Guard</text>
+  <text x="105" y="490" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="600" fill="#F1F5F9">&#8226; beehiiv / Substack / Web RSS Cross-Poster</text>
+
+  <rect x="105" y="515" width="220" height="30" rx="6" fill="#1E1B4B" stroke="#6366F1" stroke-width="1" />
+  <text x="115" y="535" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#A5B4FC">TypeScript 5.3+ &#8226; Cloudflare Edge</text>
+
+  <!-- Right Card: Commercial Metric Box -->
+  <rect x="600" y="290" width="520" height="270" rx="16" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.5" />
+  
+  <!-- Metric Box 1 -->
+  <rect x="625" y="315" width="225" height="100" rx="12" fill="#0F172A" stroke="#334155" stroke-width="1" />
+  <text x="645" y="345" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#94A3B8">SINGLE / SUITE PRICE</text>
+  <text x="645" y="380" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="900" fill="#FFFFFF">$9 / $19 <tspan font-size="16" font-weight="600" fill="#94A3B8">USD</tspan></text>
+  <text x="645" y="402" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500" fill="#10B981">~&#8377;750 / &#8377;1,599 INR</text>
+
+  <!-- Metric Box 2 -->
+  <rect x="870" y="315" width="225" height="100" rx="12" fill="#0F172A" stroke="#334155" stroke-width="1" />
+  <text x="890" y="345" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#94A3B8">SPONSORSHIP TIERS</text>
+  <text x="890" y="380" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="26" font-weight="900" fill="#38BDF8">$300 - $2,500</text>
+  <text x="890" y="402" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500" fill="#94A3B8">Starter &#8226; Growth &#8226; Network</text>
+
+  <!-- Feature Tags -->
+  <rect x="625" y="430" width="470" height="42" rx="8" fill="#1E293B" stroke="#475569" stroke-width="1" />
+  <text x="640" y="456" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#E2E8F0">&#9889; Edge Telemetry Router &#8226; D1 SQL &#8226; IndexNow &amp; RSS Webhooks</text>
+
+  <rect x="625" y="485" width="470" height="55" rx="8" fill="#042F2E" stroke="#0D9488" stroke-width="1" />
+  <text x="640" y="508" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#5EEAD4">&#10003; 100% Modern Evidence-Based Informatics &amp; Clinical Medicine</text>
+  <text x="640" y="528" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500" fill="#99F6E4">Zero alternative remedy claims &#8226; Guaranteed Placement Legal SLA</text>
+
+  <!-- Edge Badges Top Right -->
+  <g transform="translate(860, 60)">
+    <rect width="260" height="40" rx="8" fill="#1E293B" stroke="#6366F1" stroke-width="1" />
+    <text x="20" y="25" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#A5B4FC">CLOUDFLARE WORKERS D1</text>
+  </g>
+</svg>

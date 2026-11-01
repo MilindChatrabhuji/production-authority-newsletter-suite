@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Authority Newsletter &amp; Multi-Platform Sponsorship Simulator | Way #67</title>
+  <style>
+    :root {
+      --bg: #090D16;
+      --card-bg: #111827;
+      --card-border: #1F2937;
+      --accent-indigo: #6366F1;
+      --accent-purple: #8B5CF6;
+      --accent-emerald: #10B981;
+      --accent-cyan: #06B6D4;
+      --text-main: #F9FAFB;
+      --text-muted: #9CA3AF;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background: var(--bg); color: var(--text-main); line-height: 1.5; padding: 24px; }
+    header { max-width: 1100px; margin: 0 auto 32px; border-bottom: 1px solid var(--card-border); padding-bottom: 20px; }
+    .badge { display: inline-flex; align-items: center; gap: 6px; background: rgba(99, 102, 241, 0.15); border: 1px solid rgba(99, 102, 241, 0.4); color: #A5B4FC; padding: 4px 12px; border-radius: 9999px; font-size: 12px; font-weight: 700; text-transform: uppercase; margin-bottom: 12px; }
+    h1 { font-size: 28px; font-weight: 800; background: linear-gradient(135deg, #FFFFFF 0%, #A5B4FC 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    p.lead { color: var(--text-muted); font-size: 14px; margin-top: 6px; }
+
+    /* Nav Tabs */
+    .tabs { display: flex; gap: 8px; max-width: 1100px; margin: 0 auto 24px; flex-wrap: wrap; }
+    .tab-btn { background: var(--card-bg); border: 1px solid var(--card-border); color: var(--text-muted); padding: 10px 18px; border-radius: 8px; font-weight: 600; font-size: 14px; cursor: pointer; transition: all 0.2s; }
+    .tab-btn:hover { background: #1E293B; color: #FFFFFF; }
+    .tab-btn.active { background: #4F46E5; color: #FFFFFF; border-color: #6366F1; }
+
+    .container { max-width: 1100px; margin: 0 auto; }
+    .screen { display: none; background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 12px; padding: 28px; }
+    .screen.active { display: block; }
+
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    @media (max-width: 768px) { .grid-2 { grid-template-columns: 1fr; } }
+
+    .form-group { margin-bottom: 16px; }
+    label { display: block; font-size: 13px; font-weight: 600; color: #E5E7EB; margin-bottom: 6px; }
+    input, select, textarea { width: 100%; background: #0F172A; border: 1px solid #334155; border-radius: 6px; color: #FFFFFF; padding: 10px 12px; font-size: 14px; }
+    input:focus, select:focus, textarea:focus { outline: none; border-color: #6366F1; }
+
+    .btn { display: inline-flex; align-items: center; justify-content: center; background: #059669; color: #FFFFFF; font-weight: 700; font-size: 14px; padding: 10px 20px; border-radius: 6px; border: none; cursor: pointer; transition: background 0.2s; }
+    .btn:hover { background: #047857; }
+    .btn-secondary { background: #334155; }
+    .btn-secondary:hover { background: #475569; }
+
+    .preview-box { background: #0A0E17; border: 1px solid #1E293B; border-radius: 8px; padding: 20px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 13px; color: #CBD5E1; max-height: 480px; overflow-y: auto; white-space: pre-wrap; }
+    .metric-card { background: #1E293B; border: 1px solid #334155; border-radius: 8px; padding: 16px; margin-bottom: 16px; }
+    .metric-val { font-size: 26px; font-weight: 800; color: #38BDF8; }
+    .metric-label { font-size: 12px; font-weight: 600; color: #94A3B8; text-transform: uppercase; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="badge">&#9889; WAY #67 &#8226; PRODUCT 69</div>
+    <h1>Authority Newsletter &amp; Multi-Platform Sponsorship Simulator</h1>
+    <p class="lead">Interactive live laboratory for automated curation, CPM rate card synthesis, subscriber churn defense, and dual-currency retainer invoicing.</p>
+  </header>
+
+  <div class="tabs">
+    <button class="tab-btn active" onclick="switchScreen(0)">1. Curation &amp; Synthesis</button>
+    <button class="tab-btn" onclick="switchScreen(1)">2. Dynamic Sponsor Rate Card</button>
+    <button class="tab-btn" onclick="switchScreen(2)">3. Churn Guard &amp; Winback</button>
+    <button class="tab-btn" onclick="switchScreen(3)">4. Retainer Invoicing Calculator</button>
+  </div>
+
+  <div class="container">
+    <!-- SCREEN 1: Curation & Newsletter Synthesizer -->
+    <div class="screen active" id="screen-0">
+      <h2>1. Multi-Source Link Curation &amp; Newsletter Synthesis</h2>
+      <p style="color: #94A3B8; margin-bottom: 20px;">Curate peer-reviewed clinical and engineering developments with verified scientific citations.</p>
+      <div class="grid-2">
+        <div>
+          <div class="form-group">
+            <label>Publication Name</label>
+            <input type="text" id="curPubName" value="Clinical Informatics &amp; Digital Medicine Weekly" />
+          </div>
+          <div class="form-group">
+            <label>Curated Item Title</label>
+            <input type="text" id="curItemTitle" value="FDA Releases Draft Guidance on Clinical Decision Machine Learning Lifecycle" />
+          </div>
+          <div class="form-group">
+            <label>Primary Evidence Citation</label>
+            <input type="text" id="curItemCitation" value="FDA-2026-D-0982 (21 CFR Part 820 Quality System Regulation)" />
+          </div>
+          <div class="form-group">
+            <label>Featured Sponsor Headline</label>
+            <input type="text" id="curSponsorHead" value="ClinEdge: Sub-10ms FHIR v4 Health System Edge Gateway" />
+          </div>
+          <button class="btn" onclick="generateNewsletterPreview()">Synthesize Issue #42 Draft</button>
+        </div>
+        <div>
+          <div class="preview-box" id="curationPreview">Click "Synthesize Issue #42 Draft" to view publication-ready Markdown...</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCREEN 2: Dynamic Sponsor Rate Card -->
+    <div class="screen" id="screen-1">
+      <h2>2. Sponsor Media Kit &amp; Rate Card Builder</h2>
+      <p style="color: #94A3B8; margin-bottom: 20px;">Calculate CPM, CPC, and monthly advertising inventory value based on active readership metrics.</p>
+      <div class="grid-2">
+        <div>
+          <div class="form-group">
+            <label>Active Subscribers (beehiiv / Substack)</label>
+            <input type="number" id="rateSubs" value="18500" oninput="calculateRateCard()" />
+          </div>
+          <div class="form-group">
+            <label>Average Open Rate (%)</label>
+            <input type="number" id="rateOpen" value="44.8" step="0.1" oninput="calculateRateCard()" />
+          </div>
+          <div class="form-group">
+            <label>Target Technical CPM ($ USD)</label>
+            <input type="number" id="rateCpm" value="45.0" step="5" oninput="calculateRateCard()" />
+          </div>
+          <div class="metric-card">
+            <div class="metric-label">Estimated Monthly Sponsorship Revenue</div>
+            <div class="metric-val" id="metricMonthlyRev">$1,500 USD</div>
+            <p style="font-size: 12px; color: #94A3B8; margin-top: 4px;">~₹1,26,000 INR @ 4 weekly issues</p>
+          </div>
+        </div>
+        <div>
+          <div class="preview-box" id="rateCardPreview">Generating rate card breakdown...</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCREEN 3: Churn Guard & Winback -->
+    <div class="screen" id="screen-2">
+      <h2>3. Subscriber Churn Guard &amp; Deliverability Defense</h2>
+      <p style="color: #94A3B8; margin-bottom: 20px;">Detect engagement decay, protect inbox placement, and trigger automated re-engagement flows.</p>
+      <div class="grid-2">
+        <div>
+          <div class="form-group">
+            <label>Subscriber Email Address</label>
+            <input type="email" id="churnEmail" value="dr.roberts@hospital.example.com" />
+          </div>
+          <div class="form-group">
+            <label>Consecutive Unopened Issues</label>
+            <select id="churnUnopened" onchange="runChurnAudit()">
+              <option value="1">1 Issue (Normal variance)</option>
+              <option value="3">3 Issues (Mild disengagement)</option>
+              <option value="5" selected>5 Issues (Moderate Churn Risk)</option>
+              <option value="9">9+ Issues (Critical Deliverability Hazard)</option>
+            </select>
+          </div>
+          <div class="metric-card">
+            <div class="metric-label">Audit Risk Assessment</div>
+            <div class="metric-val" id="churnRiskVal" style="color: #F59E0B;">MODERATE</div>
+            <p style="font-size: 13px; color: #E2E8F0; margin-top: 6px;" id="churnActionText">Action: Dispatch automated re-engagement winback sequence.</p>
+          </div>
+        </div>
+        <div>
+          <div class="preview-box" id="churnPreview">Winback email sequence template loading...</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCREEN 4: Retainer Invoicing Calculator -->
+    <div class="screen" id="screen-3">
+      <h2>4. Dual-Currency Retainer Invoicing Calculator</h2>
+      <p style="color: #94A3B8; margin-bottom: 20px;">Generate compliant commercial invoices in USD and INR for newsletter management and sponsorships.</p>
+      <div class="grid-2">
+        <div>
+          <div class="form-group">
+            <label>Client Name / Organization</label>
+            <input type="text" id="invClientName" value="HealthTech Innovations Inc" />
+          </div>
+          <div class="form-group">
+            <label>Retainer Package / Placement Tier</label>
+            <select id="invTier" onchange="generateInvoicePreview()">
+              <option value="starter">Starter Retainer ($500 USD / mo | ~₹42,000 INR)</option>
+              <option value="growth" selected>Growth Authority Retainer ($1,500 USD / mo | ~₹1,26,000 INR)</option>
+              <option value="enterprise_network">Enterprise Network Retainer ($3,000 USD / mo | ~₹2,52,000 INR)</option>
+              <option value="single_sponsorship">Single Issue Sponsorship ($300 USD | ~₹25,200 INR)</option>
+              <option value="monthly_sponsorship">Monthly Partner Sponsorship ($1,000 USD | ~₹84,000 INR)</option>
+              <option value="single_pack">Software Single Pack ($9.00 USD | ~₹750 INR)</option>
+              <option value="master_suite">Master Commercial Suite ($19.00 USD | ~₹1,599 INR)</option>
+            </select>
+          </div>
+          <div class="metric-card">
+            <div class="metric-label">Settlement Remittance Coordinates</div>
+            <p style="font-size: 13px; color: #E2E8F0; margin-top: 4px;"><strong>Domestic UPI:</strong> milind.chatrabhuji@okhdfcbank</p>
+            <p style="font-size: 13px; color: #E2E8F0; margin-top: 2px;"><strong>International PayPal:</strong> milind.chatrabhuji@gmail.com</p>
+          </div>
+        </div>
+        <div>
+          <div class="preview-box" id="invPreview">Generating commercial invoice...</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function switchScreen(idx) {
+      document.querySelectorAll('.tab-btn').forEach((btn, i) => {
+        btn.classList.toggle('active', i === idx);
+      });
+      document.querySelectorAll('.screen').forEach((scr, i) => {
+        scr.classList.toggle('active', i === idx);
+      });
+    }
+
+    function generateNewsletterPreview() {
+      const pub = document.getElementById('curPubName').value;
+      const title = document.getElementById('curItemTitle').value;
+      const cite = document.getElementById('curItemCitation').value;
+      const sp = document.getElementById('curSponsorHead').value;
+
+      const md = `# ${pub} #42\n\n` +
+        `**Weekly Evidence Digest: FDA Updates, Clinical Informatics & Healthcare Tech**\n` +
+        `*Published on 2026-11-01*\n\n---\n\n` +
+        `> **[PARTNER DISCLOSURE: SPONSORED BY CLINEDGE]**\n` +
+        `> ### ${sp}\n` +
+        `> Scale hospital EHR integrations effortlessly with 100% HIPAA-compliant sub-10ms edge routing.\n` +
+        `> [**Deploy Instant Free Developer Sandbox &rarr;**](https://sponsor.example.com/sandbox)\n\n---\n\n` +
+        `## High-Yield Clinical Informatics Developments\n\n` +
+        `### 1. [${title}](https://newsletter.example.com/digest/fda-ai)\n` +
+        `*Source: FDA CDRH Digital Health Center of Excellence | Category: regulatory_fda*\n\n` +
+        `- Establishes pre-determined change control plans (PCCPs) for machine learning algorithms\n` +
+        `- Mandates real-world performance monitoring protocols in clinical workflows\n\n` +
+        `**Clinical Take:** Enforces software engineering discipline on medtech deployments.\n\n` +
+        `*Evidence Citation:* ${cite}\n\n` +
+        `---\n\n&copy; 2026 ${pub}. Strictly 100% evidence-based clinical medicine & software engineering.`;
+
+      document.getElementById('curationPreview').textContent = md;
+    }
+
+    function calculateRateCard() {
+      const subs = parseInt(document.getElementById('rateSubs').value, 10) || 18500;
+      const open = parseFloat(document.getElementById('rateOpen').value) || 44.8;
+      const cpm = parseFloat(document.getElementById('rateCpm').value) || 45.0;
+
+      const activeReaders = Math.round(subs * (open / 100));
+      const issuePrice = Math.max(300, Math.round((activeReaders / 1000) * cpm));
+      const monthlyRev = issuePrice * 4;
+
+      document.getElementById('metricMonthlyRev').textContent = '$' + monthlyRev.toLocaleString() + ' USD';
+
+      const preview = `SPONSOR MEDIA KIT & RATE CARD\n` +
+        `===================================\n` +
+        `Verified Subscribers: ${subs.toLocaleString()}\n` +
+        `Average Open Rate: ${open}% (~${activeReaders.toLocaleString()} readers/issue)\n` +
+        `Industry Benchmark CPM: $${cpm.toFixed(2)} USD\n\n` +
+        `AVAILABLE SPONSORSHIP TIERS:\n` +
+        `1. Starter Placement: $${issuePrice} USD / issue ($1,000 USD / mo)\n` +
+        `   - 100-word featured slot + CTA + sub-10ms click tracking\n\n` +
+        `2. Growth Partner: $1,500 USD / mo (Weekly prominence)\n` +
+        `   - 4x Consecutive editions + co-branded editorial highlight\n\n` +
+        `3. Network Exclusive Lockout: $3,000 USD / quarter\n` +
+        `   - Sole category advertiser + custom lead generation brief`;
+
+      document.getElementById('rateCardPreview').textContent = preview;
+    }
+
+    function runChurnAudit() {
+      const email = document.getElementById('churnEmail').value;
+      const unopened = parseInt(document.getElementById('churnUnopened').value, 10);
+      let risk = 'LOW';
+      let color = '#10B981';
+      let action = 'Subscriber active. Continue weekly dispatches.';
+      let preview = 'No intervention needed.';
+
+      if (unopened >= 8) {
+        risk = 'CRITICAL';
+        color = '#EF4444';
+        action = 'Action: Auto-suppress from active sends to protect sender reputation.';
+        preview = `SYSTEM ALERT: SUBSCRIBER SUPPRESSION\nSubscriber ${email} has missed ${unopened} issues.\nStatus: Flagged for automated pruning.`;
+      } else if (unopened >= 4) {
+        risk = 'MODERATE';
+        color = '#F59E0B';
+        action = 'Action: Dispatch automated re-engagement winback sequence.';
+        preview = `WINBACK EMAIL DISPATCH\n` +
+          `Subject: Should we pause your Clinical Informatics updates?\n\n` +
+          `Hi there,\n\nWe noticed you haven't opened the last ${unopened} editions.\n` +
+          `We protect your inbox strictly: if you'd like to stay subscribed, please confirm below:\n` +
+          `[Confirm My Subscription](https://newsletter.example.com/confirm?email=${encodeURIComponent(email)})\n\n` +
+          `Otherwise, we will automatically unsubscribe you next week.`;
+      }
+
+      document.getElementById('churnRiskVal').textContent = risk;
+      document.getElementById('churnRiskVal').style.color = color;
+      document.getElementById('churnActionText').textContent = action;
+      document.getElementById('churnPreview').textContent = preview;
+    }
+
+    function generateInvoicePreview() {
+      const client = document.getElementById('invClientName').value;
+      const tier = document.getElementById('invTier').value;
+
+      let usd = 1500;
+      let desc = 'Newsletter Growth Authority Retainer';
+      if (tier === 'starter') { usd = 500; desc = 'Newsletter Starter Retainer (2 issues/mo)'; }
+      else if (tier === 'enterprise_network') { usd = 3000; desc = 'Enterprise Network Retainer (Turnkey operations)'; }
+      else if (tier === 'single_sponsorship') { usd = 300; desc = 'Single Issue Featured Sponsorship Placement'; }
+      else if (tier === 'monthly_sponsorship') { usd = 1000; desc = 'Monthly Partner Sponsorship (4 Editions)'; }
+      else if (tier === 'single_pack') { usd = 9; desc = 'Production Authority Newsletter Engine Single Pack'; }
+      else if (tier === 'master_suite') { usd = 19; desc = 'Production Authority Newsletter & Sponsorship Master Suite'; }
+
+      const inr = Math.round(usd * 84.0);
+
+      const inv = `COMMERCIAL INVOICE: INV-NEWS-892147\n` +
+        `Date: 2026-11-01 | Due Date: 2026-11-15\n` +
+        `Billed To: ${client}\n` +
+        `Issued By: Dr. Milind Chatrabhuji (IncomeEngine Publishing Network, India)\n\n` +
+        `ITEMIZED SERVICES:\n` +
+        `- ${desc}: $${usd.toFixed(2)} USD\n\n` +
+        `TOTAL DUE:\n` +
+        `- $${usd.toFixed(2)} USD\n` +
+        `- ₹${inr.toLocaleString('en-IN')} INR (approx @ ₹84.0/USD)\n\n` +
+        `SETTLEMENT CHANNELS:\n` +
+        `1. Domestic UPI (India): milind.chatrabhuji@okhdfcbank\n` +
+        `2. International PayPal: milind.chatrabhuji@gmail.com (https://paypal.me/milindchatrabhuji/${usd}usd)\n\n` +
+        `Strictly 100% Modern Evidence-Based Clinical Informatics & Software Engineering.`;
+
+      document.getElementById('invPreview').textContent = inv;
+    }
+
+    // Init
+    generateNewsletterPreview();
+    calculateRateCard();
+    runChurnAudit();
+    generateInvoicePreview();
+  </script>
+</body>
+</html>
